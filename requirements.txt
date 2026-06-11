@@ -1,0 +1,7 @@
+filterpy>=1.4.5
+numpy>=1.23
+opencv-python>=4.8
+pyyaml>=6.0
+pyzbar>=0.1.9
+torch>=2.0
+ultralytics>=8.0

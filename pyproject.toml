@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "balloon-shooter"
+version = "0.1.0"
+description = "AI section for a PC-based balloon-shooter demo system."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "filterpy>=1.4.5",
+    "numpy>=1.23",
+    "opencv-python>=4.8",
+    "pyyaml>=6.0",
+    "pyzbar>=0.1.9",
+    "torch>=2.0",
+    "ultralytics>=8.0",
+]
+
+[project.scripts]
+balloon-shooter-ai = "balloon_shooter.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "UP"]
