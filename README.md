@@ -330,6 +330,11 @@ The repository includes GitHub Actions CI under `.github/workflows/ci.yml`.
 | `src/mcu_bridge/JsonMessenger.cpp` | Embedded-side JSON messaging helper. |
 
 ---
+## Important Links
+
+Mechanical design by Ali Aljassem: https://lnkd.in/drCWBaU6 
+
+PCB design by Saaid JABR: https://github.com/Dev-Saeed/Turret-Control-PCB-Firmware
 
 ## Media
 
